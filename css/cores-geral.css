@@ -1,12 +1,13 @@
 :root {
   --cor-primaria: #7766DD;
+  --linear-primaria: linear-gradient(180deg, #7766DD 0%, #5948BF 100%);  
+  --primaria-cinza-0: #100F12;
+  --primaria-cinza-1: #3C3B45;
+  
   --cor-secundaria: #00CCBB;
-  --linear-primaria: linear-gradient(180deg, #7766DD 0%, #5948BF 100%);
-  
-  --bg-primaria-cinza: #100F12;
-  --bg-secundaria-cinza: #020303;
+  --secundaria-cinza-0: #020303;
   --linear-secundaria: linear-gradient(180deg, #00CCBB 0%, #0DA195 100%);
-  
+
   --cinza-9: #000;
   --cinza-8: #1A1A1A;
   --cinza-7: #333333;

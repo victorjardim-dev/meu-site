@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #7766DD;
+  color: #fff;
+}
+
 body {
-  background: var(--bg-primaria-cinza);
+  background: var(--primaria-cinza-0);
   color: var(--cinza-0);
-  font-family: 'Kelly Slab', cursive;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -38,6 +42,30 @@ img {
   margin: 0 auto;
 }
 
+.titulo-secao {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--primaria-cinza-1);
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding-bottom: 12px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.titulo-secao::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: block;
+  background: var(--primaria-cinza-1);
+  height: 4px;
+  width: 60px;
+}
+
 .botao {
   text-transform: uppercase;
   background: var(--linear-primaria);
@@ -46,6 +74,8 @@ img {
   font-weight: 600;
   font-size: 1.15rem;
   line-height: 1.15;
+  color: var(--cinza-0);
+  letter-spacing: 0.05rem;
 }
 
 .botao:hover {

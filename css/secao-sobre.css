@@ -1,0 +1,114 @@
+.secao-sobre-bg {
+  padding: 120px 0;
+  background-color: var(--secundaria-cinza-0);
+}
+
+.secao-sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.secao-sobre-conteudo figure,
+.secao-sobre-conteudo .secao-sobre-descricao {
+  flex: 1;
+}
+
+.secao-sobre-conteudo figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.secao-sobre-conteudo .secao-sobre-descricao {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.secao-sobre-descricao h2 {
+  color: var(--cor-primaria);
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.secao-sobre-descricao h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 60px;
+  height: 2px;
+  background: var(--cor-primaria);
+}
+
+.secao-sobre-descricao .sobre-mim {
+  margin-bottom: 40px;
+}
+
+.secao-sobre-descricao .sobre-mim p {
+  color: var(--cinza-3);
+  font-size: 16;
+  line-height: 1.75;
+  margin-bottom: 8px;
+  font-weight: 400;
+  width: 54ch;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item {
+  background: #100F12;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #3C3B45;
+  border-radius: 4px;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item:hover {
+  background: #06021B;
+  border-color: #7766DD;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #B3B3B3;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item.ads {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.secao-sobre-descricao .formacao-cursos .formacao-item.ads h3,
+.secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span {
+  width: 50%;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span span {
+  display: block;
+  color: #808080;
+  text-align: right;
+}
+
+.secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span span:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+.secao-sobre-descricao .formacao-cursos .ingles-ensinomedio {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+
+.secao-sobre-descricao .formacao-cursos .ingles-ensinomedio > .formacao-item {
+  flex: 1;
+}
