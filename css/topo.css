@@ -1,5 +1,5 @@
 header {
-  padding: 32px 0;
+  padding: 2rem 0;
   width: 100%;
 }
 
@@ -16,7 +16,7 @@ header {
 
 .nav-menu {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .nav-menu a {
@@ -24,8 +24,8 @@ header {
   letter-spacing: .05rem;
   font-weight: 600;
   text-transform: lowercase;
-  padding: 16px 0;
-  font-size: 1rem;
+  padding: 1rem 0;
+  font-size: 1.15rem;
   line-height: 1.5;
   text-align: right;
   transition: color .3s ease-in-out;
@@ -36,9 +36,9 @@ header {
   position: absolute;
   content: '';
   left: 0;
-  bottom: 8px;
+  bottom: 0.5rem;
   width: 0px;
-  height: 2px;
+  height: 0.125rem;
   transition: width .6s ease;
 }
 

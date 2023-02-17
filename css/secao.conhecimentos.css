@@ -1,0 +1,194 @@
+.secao-conhecimentos {
+  padding-top: 120px;
+}
+
+.conhecimentos {
+  display: flex;
+  gap: 60px;
+}
+
+.conhecimentos .conhecimentos-principais,
+.conhecimentos .conhecimentos-emdesenvolvimento {
+  flex: 1;
+}
+
+.conhecimentos-principais .principais {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.conhecimentos-principais .principais .principais-titulo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+.conhecimentos-principais .principais .principais-titulo-box span {
+  font-size: 20px;
+  line-height: 1;
+  font-family: 'Kelly Slab', cursive;
+  padding: 12px;
+  background: #3C3B45;
+  color: #C3BFDE;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all .3s;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box-container {
+  width: 50%;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box {
+  padding: 20px 20px 40px 20px;
+  margin-bottom: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #3C3B45;
+  position: relative;
+  text-align: center;
+  transition: all .3s;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box:hover {
+  background: #06021B;
+  transform: translateY(-2px);
+}
+
+.conhecimentos-principais .principais .principais-descricao-box::before {
+  content: '';
+  background: #3C3B45;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 18%;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box h3 {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  color: #B3B3B3;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #B3B3B3;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.conhecimentos-principais .principais .principais-descricao-box img {
+  filter: grayscale(10%);
+  margin: 0 auto;
+}
+
+/* JS ATIVO TABS */
+
+.js .conhecimentos-principais .principais .principais-titulo-box {
+  justify-content: center;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box {
+  display: none;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box::before {
+  background: #7766DD;
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span:hover {
+  background: #00CCBB;
+  color: #FFFFFF;
+  transform: translateX(8px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo {
+  background: #06021B;
+  border-color: #7766DD;
+  color: #7766DD;
+  transform: translateX(8px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 41px;
+  background: #3C3B45;
+  right: -41px;
+  top: 50%;
+  border-top: 1px solid #3C3B45;
+  border-bottom: 1px solid #3C3B45;
+  transform: translate3d(0px, -50%, 0px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo::after {
+  background: #06021B;
+  border-color: #7766DD;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box.js-ativo {
+  display: block;
+  transform: translateY(0);
+  background: #06021B;
+  border-color: #7766DD;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box.js-ativo::after {
+  display: block;
+  content: '';
+  background: #7766DD;
+}
+
+
+.conhecimentos-emdesenvolvimento p {
+  margin-top: 32px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 53ch;
+  color: #B3B3B3;
+  position: relative;
+}
+
+.conhecimentos-emdesenvolvimento p::after {
+  content: '';
+  height: 1px;
+  width: 70%;
+  background: #3C3B45;
+  bottom: -0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.conhecimentos-emdesenvolvimento .emdesenvolvimento-imgs {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.conhecimentos-emdesenvolvimento .emdesenvolvimento-imgs img {
+  filter: grayscale(100%);
+  transition: all .3s ease-in-out;
+}
+
+.conhecimentos-emdesenvolvimento .emdesenvolvimento-imgs img:hover {
+  filter: grayscale(0);
+  transform: translateY(-4px);
+}

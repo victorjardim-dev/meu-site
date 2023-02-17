@@ -19,6 +19,8 @@
   <meta property="og:site_name" content="">
   <!-- Open Graph -->
 
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
   <!-- <link rel="preload" href="./css/style.min.css" as="style"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +55,7 @@
 
     <section class="container-geral secao-apresentacao">
       <div class="apresentacao-descricao">
-        <p class="boas-vindas">Olá, <span>boas vindas!</span> Me chamo: </p>
+        <p class="boas-vindas">Olá, <span id="boas-vindas">boas vindas!</span> Me chamo: </p>
         <div class="apresentacao-titulos">
           <h1>Victor Jardim</h1>
           <h2>Desenvolvedor Front-End Web & UI Designer</h2>
@@ -90,56 +92,127 @@
         </ul>
       </div>
     </section>
+    
+    <div class="secao-bg">
 
-    <section class="secao-sobre-bg" id="sobre">
-      <div class="container-geral">
-        <h1 class="titulo-secao">Sobre</h1>
-        <div>
-          <div class="secao-sobre-conteudo">
-            <figure>
-              <img src="./img/sobre-imagem.jpg" alt="" width="700" height="auto">
-            </figure>
-            <div class="secao-sobre-descricao">
-              
-              <div class="sobre-mim">
-                <h2>Sobre mim</h2>
-                <div>
-                  <p>Desde que decidi ingressar na programação, tenho estudado, praticado bastante e colocado em prática o que já aprendi até aqui.</p>
-                  <p>Me apaixonei pelas tecnologias de Front End para Web, e também pela criação de interface de usuário. Ultimamente, tenho estudado JavaScript e me aprofundado em React JS. No futuro, quero me tornar um Dev Full Stack.</p>
-                  <p>Sou uma pessoa que tem facilidade no aprendizado, gosto de novos desafios, tenho uma comunicação aceitável e busco me aprimorar cada vez mais.</p>
-                </div>
-              </div>
-
-              <div class="formacao">
-                <h2>Formação</h2>
-                <div class="formacao-cursos">
-
-                  <div class="formacao-item ads">
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <div class="ads-span">
-                      <span>Estácio de Sá</span>
-                      <span>Cursando - Conclusão em 2024</span>
-                    </div>
+      <section class="secao-sobre" id="sobre">
+        <div class="container-geral">
+          <h1 class="titulo-secao">Sobre</h1>
+          <div>
+            <div class="secao-sobre-conteudo">
+              <figure>
+                <img src="./img/sobre-imagem.jpg" alt="" width="700" height="auto">
+              </figure>
+              <div class="secao-sobre-descricao">
+                
+                <div class="sobre-mim">
+                  <h2 class="subtitulo-secao">Sobre mim</h2>
+                  <div>
+                    <p>Desde que decidi ingressar na programação, tenho estudado, praticado bastante e colocado em prática o que já aprendi até aqui.</p>
+                    <p>Me apaixonei pelas tecnologias de <strong>Front End para Web</strong>, e também pela <strong>criação de interface de usuário</strong>. Ultimamente, tenho estudado <strong>JavaScript</strong> e me aprofundado em <strong>React JS</strong>. No futuro, quero <strong>me tornar um Dev Full Stack</strong>.</p>
+                    <p>Sou uma pessoa que tem facilidade no aprendizado, gosto de novos desafios, tenho uma comunicação aceitável e <strong>busco me aprimorar cada vez mais</strong>.</p>
                   </div>
-
-                  <div class="ingles-ensinomedio">
-                    <div class="formacao-item">
-                      <h3>Inglês Intermediário</h3>
-                    </div>
-
-                    <div class="formacao-item">
-                      <h3>Ensino Médio Completo</h3>
-                    </div>
-                  </div>
-
                 </div>
-              </div>
 
+                <div class="formacao">
+                  <h2 class="subtitulo-secao">Formação</h2>
+                  <div class="formacao-cursos">
+
+                    <div class="formacao-item ads">
+                      <h3>Análise e Desenvolvimento de Sistemas</h3>
+                      <div class="ads-span">
+                        <span>Estácio de Sá</span>
+                        <span>Cursando - Conclusão em 2024</span>
+                      </div>
+                    </div>
+
+                    <div class="ingles-ensinomedio">
+                      <div class="formacao-item">
+                        <h3>Inglês Intermediário</h3>
+                      </div>
+
+                      <div class="formacao-item">
+                        <h3>Ensino Médio Completo</h3>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="secao-conhecimentos" id="conhecimentos">
+        <div class="container-geral">
+          <h1 class="titulo-secao">Conhecimentos</h1>
+          <div class="conhecimentos">
+            
+            <div class="conhecimentos-principais">
+              <h2 class="subtitulo-secao">Principais</h2>
+
+              <div class="principais">
+                <div class="principais-titulo-box">
+                  <span class="">HTML</span>
+                  <span class="">CSS</span>
+                  <span class="">JavaScript</span>
+                  <span class="">React</span>
+                  <span class="">Figma</span>
+                </div>
+
+                <div class="principais-descricao-box-container">
+                  <div class="principais-descricao-box">
+                    <h3>HTML</h3>
+                    <p>Construção de páginas em HTML semântico, um pouco de acessibilidade e de SEO.</p>
+                    <img src="./img/conhecimentos/imagem-html.svg" alt="Conhecimentos HTML">
+                  </div>
+                  
+                  <div class="principais-descricao-box ">
+                    <h3>CSS</h3>
+                    <p>Box model, media queries para sites responsivos, flex-box, um pouco de grid e animações</p>
+                    <img src="./img/conhecimentos/imagem-css.svg" alt="Conhecimentos CSS">
+                  </div>
+    
+                  <div class="principais-descricao-box ">
+                    <h3>JavaScript</h3>
+                    <p>Arrays, funções, objetos e um pouco sobre a manipulação do DOM.</p>
+                    <img src="./img/conhecimentos/imagem-javascript.svg" alt="Conhecimentos JavaScript">
+                  </div>
+    
+                  <div class="principais-descricao-box ">
+                    <h3>React JS</h3>
+                    <p>Junção das três principais tecnologias web, assim como criação de componentes, state hook, rotas e props.</p>
+                    <img src="./img/conhecimentos/imagem-react.svg" alt="Conhecimentos ReactJS">
+                  </div>
+    
+                  <div class="principais-descricao-box ">
+                    <h3>Figma</h3>
+                    <p>Criação de protótipos, wireframes, interfaces de usuário e UX Design.</p>
+                    <img src="./img/conhecimentos/imagem-figma.svg" alt="Conhecimentos Figma">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="conhecimentos-emdesenvolvimento">
+              <h2 class="subtitulo-secao">Em Desenvolvimento</h2>
+              <p>Pouco a pouco tenho aprendido e evoluido nas tecnologias front-end e back-end. A meta é construir uma aplicação web completa, desde o briefing, passando pela prototipagem ao código. E por fim, o deploy no servidor.</p>
+              <div class="emdesenvolvimento-imgs">
+                <img src="./img/conhecimentos/conhecimento-futuro-php.svg" alt="Conhecimentos PHP">
+                <img src="./img/conhecimentos/conhecimento-futuro-sql.svg" alt="Conhecimentos SQL">
+                <img src="./img/conhecimentos/conhecimento-futuro-nodejs.svg" alt="Conhecimentos NodeJS">
+                <img src="./img/conhecimentos/conhecimento-futuro-git.svg" alt="Conhecimentos Git">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
@@ -170,6 +243,6 @@
 
 
 
-  <script src="./js/script.js" type="module"></script>
+  <script src="./js/scripts.js" type="module"></script>
 </body>
 </html>
