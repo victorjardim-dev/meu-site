@@ -1,0 +1,106 @@
+.secao-apresentacao {
+  padding: 200px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.apresentacao-descricao .boas-vindas {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--cinza-3);
+}
+
+.apresentacao-descricao .apresentacao-titulos {
+  margin: 20px 0px;
+}
+
+.apresentacao-descricao .apresentacao-titulos h1 {
+  font-size: 64px;
+  line-height: 1;
+  color: var(--cinza-0);
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  padding: 20px 0px;
+  position: relative;
+}
+
+.apresentacao-descricao .apresentacao-titulos h1::before {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  font-weight: 600;
+  top: 0px;
+  left: 0px;
+}
+
+.apresentacao-descricao .apresentacao-titulos h2 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--cinza-3);
+  position: relative;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao-descricao .apresentacao-titulos h2::before {
+  content: '';
+  height: 4px;
+  width: 80px;
+  background-color: var(--cor-primaria);
+}
+
+.apresentacao-descricao .localizacao {
+  width: 100%;
+  font-size: 16px;
+  color: var(--cor-primaria);
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.apresentacao-social {
+  width: 50%;
+  position: relative;
+}
+
+.apresentacao-social ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.apresentacao-social ul::after {
+  content: '';
+  width: 4px;
+  height: 200px;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  bottom: -260px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .3s ease;
+}
+
+.apresentacao-social ul:hover::after {
+  background: var(--cor-secundaria);
+}
+
+.apresentacao-social li svg:hover path {
+  fill: var(--cor-secundaria);
+  stroke: var(--cor-secundaria);
+}
+
+.apresentacao-social li:nth-child(2) svg:hover path {
+  fill: transparent;
+}

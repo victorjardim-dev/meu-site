@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  display: inline-block;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -32,4 +36,18 @@ img {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+
+.botao {
+  text-transform: uppercase;
+  background: var(--linear-primaria);
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.15;
+}
+
+.botao:hover {
+  background: var(--linear-secundaria)
 }
