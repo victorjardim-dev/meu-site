@@ -6,3 +6,6 @@ activeTabsKnowledge();
 
 import activeCertificateAcordion from "./certifificados-acordion.js";
 activeCertificateAcordion();
+
+import setCurrentYear from "./anoAtual.js";
+setCurrentYear();

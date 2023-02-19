@@ -1,0 +1,35 @@
+.rodape {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+.rodape::before,
+.rodape::after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5948BF;
+}
+
+.rodape::before {
+  top: 24px;
+}
+.rodape::after {
+  bottom: 24px;
+}
+
+.rodape p {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: #B3B3B3;
+}
+
+.rodape p > span {
+  color: #5948BF;
+}

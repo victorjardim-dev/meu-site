@@ -52,6 +52,9 @@
   color: #b3b3b3;
 }
 
+.projetos-container-box .projeto-box h2.subtitulo-secao + p {
+  margin-top: -40px;
+}
 
 .projetos-container-box .projeto-box .tecnologias {
   position: relative;
