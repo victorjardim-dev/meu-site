@@ -33,6 +33,10 @@ span {
   display: inline-block;
 }
 
+strong.texto-destacado {
+  color: #5948BF;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -43,6 +47,7 @@ img {
 .container-geral {
   max-width: 1440px;
   width: 100%;
+  padding: 0px 20px;
   margin: 0 auto;
 }
 
@@ -68,7 +73,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: -4px;
   display: block;
   background: var(--primaria-cinza-1);
   height: 4px;
@@ -109,4 +114,14 @@ img {
 
 .botao:hover {
   background: var(--linear-secundaria);
+}
+
+.desabilitado {
+  opacity: .5;
+  filter: grayscale(100%);
+}
+.desabilitado:hover {
+  opacity: 1;
+  filter: grayscale(80%);
+
 }

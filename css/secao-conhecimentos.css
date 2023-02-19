@@ -1,10 +1,23 @@
 .secao-conhecimentos {
   padding-top: 120px;
+  position: relative;
+}
+
+.secao-conhecimentos::after {
+  content: '';
+  height: 4px;
+  max-width: 1440px;
+  width: 100%;
+  background: #3C3B45;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .conhecimentos {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 
 .conhecimentos .conhecimentos-principais,
@@ -33,7 +46,6 @@
   background: #3C3B45;
   color: #C3BFDE;
   border-radius: 4px;
-  cursor: pointer;
   letter-spacing: 0.1rem;
   position: relative;
   border: 1px solid transparent;
@@ -116,10 +128,15 @@
   transform: translateX(8px);
 }
 
+.js .conhecimentos-principais .principais .principais-titulo-box span {
+  cursor: pointer;
+}
+
 .js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo {
   background: #06021B;
   border-color: #7766DD;
   color: #7766DD;
+  cursor: pointer;
   transform: translateX(8px);
 }
 
@@ -142,18 +159,12 @@
 }
 
 .js .conhecimentos-principais .principais .principais-descricao-box.js-ativo {
-  display: block;
+  display: flex;
   transform: translateY(0);
   background: #06021B;
   border-color: #7766DD;
+  min-height: 370px;
 }
-
-.js .conhecimentos-principais .principais .principais-descricao-box.js-ativo::after {
-  display: block;
-  content: '';
-  background: #7766DD;
-}
-
 
 .conhecimentos-emdesenvolvimento p {
   margin-top: 32px;

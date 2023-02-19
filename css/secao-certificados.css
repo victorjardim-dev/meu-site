@@ -1,0 +1,180 @@
+.secao-certificados {
+  padding: 200px 0px 120px 0px;
+  position: relative;
+}
+
+.secao-certificados::after {
+  content: '';
+  height: 4px;
+  max-width: 1440px;
+  width: 100%;
+  background: #3C3B45;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.certificados {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.certificados .certificado-container,
+.certificados .certificado-imagem {
+  width: 50%;
+  align-self: stretch;
+}
+
+.certificados .certificado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificados .certificado-container .certificado-box {
+  border: 1px solid;
+  width: 90%;
+  border: 1px solid #4433A5;
+  border-radius: 8px;
+  background: #000000;
+}
+
+.certificados .certificado-container .certificado-box .certificado-titulo-box {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.certificados .certificado-container .certificado-box .certificado-titulo-box > span {
+  visibility: hidden;
+}
+
+.certificados .certificado-container .certificado-box .certificado-titulo-box h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #76d;
+  font-weight: 600;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:nth-child(odd) {
+  background: #06021B;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:last-child {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  padding: 6px 18px;
+  color: #100F12;
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao > img {
+  display: inline;
+  margin-left: 8px;
+  transform: translateY(-20%);
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:hover a.botao {
+  opacity: .7;
+  right: 70px;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao:hover {
+  opacity: 1;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo h3 {
+  font-size: 16px;
+  line-height: 1;
+  color: #b3b3b3;
+  font-weight: 400;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:hover h3 {
+  color: #fff;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo span {
+  font-family: 'Kelly Slab', cursive;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  color: #76d;
+}
+
+.certificados .certificado-imagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certificados .certificado-imagem img {
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ACORDEON JS */
+
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box {
+  cursor: pointer;
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box > span {
+  visibility: visible;
+  transform: rotate(180deg);
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box.ativo > span {
+  transform: initial;
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-conteudo-box {
+  display: none;
+  animation: openBox .3s;
+}
+
+@keyframes openBox {
+  from {
+    opacity: 0;
+    max-height: 0px;
+  }
+  to {
+    opacity: 1;
+    max-height: 800px;
+  }
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-conteudo-box.ativo {
+  display: flex;
+}

@@ -1,0 +1,140 @@
+.secao-projetos {
+  padding: 120px 0px 200px 0px;
+}
+
+.projetos-container-box {
+  width: 100%;
+  padding: 0px 160px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.projetos-container-box .projeto-box {
+  width: calc(85% / 2 - 20px);
+  min-height: 550px;
+  padding: 0px 20px;
+  border: 2px solid #76d;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  transition: .3s;
+}
+
+.projetos-container-box .projeto-box:hover {
+  background: #000;
+  border-color: #00CCBB;
+  box-shadow: 0px 4px 0px 0px #00CCBB;
+  transform: translateY(-4px);
+}
+
+
+.projetos-container-box .projeto-box h2.subtitulo-secao::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.projetos-container-box .projeto-box:hover h2.subtitulo-secao {
+  color: #00CCBB;
+}
+.projetos-container-box .projeto-box:hover h2.subtitulo-secao::after {
+  background: #00CCBB;
+}
+
+.projetos-container-box .projeto-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #b3b3b3;
+}
+
+
+.projetos-container-box .projeto-box .tecnologias {
+  position: relative;
+}
+
+.projetos-container-box .projeto-box .tecnologias::before,
+.projetos-container-box .projeto-box .tecnologias::after {
+  content: '';
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  position: absolute;
+  background: #3C3B45;
+}
+
+.projetos-container-box .projeto-box .tecnologias::before {
+  top: -12px;
+}
+
+.projetos-container-box .projeto-box .tecnologias::after {
+  bottom: -12px;
+}
+
+.projetos-container-box .projeto-box .projeto-box-tecnologias {
+  width: 80%;
+  margin: 12px auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.projetos-container-box .projeto-box .projeto-box-tecnologias .tecnologia-usada {
+  flex: 1;
+  background: #3C3B45;
+  padding: 4px 0;
+  text-transform: uppercase;
+  color: #C3BFDE;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 4px;
+  transition: all .3s ease-in-out;
+}
+
+.projetos-container-box .projeto-box .projeto-box-tecnologias .tecnologia-usada:hover {
+  transform: translateY(-2px);
+  background: #06021B;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes a.botao {
+  font-size: 14px;
+  background: #76d;
+  color: #100F12;
+  border: 2px solid transparent;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes a.botao:hover {
+  background: #00CCBB;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes a.botao:last-child {
+  background: transparent;
+  border-color: #76d;
+  color: #76d;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes a.botao:last-child:hover {
+  background: #3C3B45;
+}
+
+.projetos-container-box .projeto-box .projetos-botoes a.botao img {
+  display: inline;
+  margin-left: 8px;
+  transform: translateY(-50%) scale(1.5);
+}
+
+.projetos-container-box .projeto-box.desabilitado .projetos-botoes a.botao {
+  pointer-events: none;
+}
