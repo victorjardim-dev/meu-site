@@ -1,15 +1,16 @@
 function animatedGreetings(frase) {
   const fraseArray = frase.innerHTML.split('');
   frase.innerHTML = '';
-  fraseArray.forEach( (letra, i) => setTimeout( () => frase.innerHTML += letra , 200 * i));  
+  fraseArray.forEach( (letra, i) => setTimeout( () => frase.innerHTML += letra , 250 * i));  
 }
 
-function setGreetings() {
+function setGreetings(data) {
   const boasVindas = document.querySelector('.js #boas-vindas');
   if(!!boasVindas) {
-    const dataAtual = new Date();
-    // dataAtual.setHours(8);
-    const horaAtual = dataAtual.getHours();    
+
+    // data.setHours(15); // Teste para mensagem
+    const horaAtual = data.getHours();   
+
     if(horaAtual >= 0 && horaAtual < 6) {
       boasVindas.innerHTML = "boa madrugada!";
     } else if (horaAtual >= 6 && horaAtual < 12) {
@@ -21,6 +22,7 @@ function setGreetings() {
     }
     
     animatedGreetings(boasVindas);
+    
   }
 }
 

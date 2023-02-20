@@ -1,5 +1,5 @@
-function setCurrentYear() {
-  ano.innerHTML = new Date().getFullYear();
+function setCurrentYear(data) {
+  ano.innerHTML = data.getFullYear();
 }
 
 export default setCurrentYear;

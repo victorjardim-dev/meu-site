@@ -1,10 +1,10 @@
 @import url('./cores-geral.css');
 @import url('./geral.css');
-@import url('./topo.css');
-@import url('./secao-apresentacao.css');
-@import url('./secao-sobre.css');
-@import url('./secao-conhecimentos.css');
-@import url('./secao-certificados.css');
-@import url('./secao-projetos.css');
-
-@import url('./rodape.css');
+@import url('./Topo/topo.css');
+@import url('./SecaoApresentacao/secao-apresentacao.css');
+@import url('./SecaoSobre/secao-sobre.css');
+@import url('./SecaoConhecimentos/secao-conhecimentos.css');
+@import url('./SecaoCertificados/secao-certificados.css');
+@import url('./SecaoProjetos/secao-projetos.css');
+@import url('./SecaoContato/secao-contato.css');
+@import url('./Rodape/rodape.css');

@@ -1,0 +1,97 @@
+.secao-contato {
+  padding: 200px 0px;
+  background: #020303;
+}
+
+.secao-contato .secao-contato-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-titulo-social,
+.secao-contato-imagem-cv {
+  width: 50%;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-titulo-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #3C3B45;
+  transition: .3s ease-in-out;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li:hover {
+  transform: translateX(12px);
+  border-color: #00CCBB;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li a {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+  gap: 40px;
+  color: #B3B3B3;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li a > svg:last-child {
+  object-fit: none;
+  transform: scale(1.8);
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li:hover a {
+  color: #00CCBB;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li:hover a svg path {
+  fill: var(--cor-secundaria);
+  stroke: var(--cor-secundaria);
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li:hover:nth-child(2) a svg:nth-child(1) path {
+  fill: transparent;
+}
+
+.secao-contato .secao-contato-conteudo .social-lista li a,
+.secao-contato .secao-contato-conteudo .social-lista li a svg {  
+  transition: .3s;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv figure img {
+  border-radius: 8px;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv p {
+  margin: 80px 0px 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #B3B3B3;
+  position: relative;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv p::before {
+  content: '';
+  height: 1px;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -32px;
+  position: absolute;
+  background: #3C3B45;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv a.botao {
+  color: #100F12;
+}
