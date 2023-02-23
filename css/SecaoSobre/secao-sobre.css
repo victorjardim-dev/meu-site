@@ -40,24 +40,24 @@
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item {
-  background: #100F12;
+  background: var(--primaria-cinza-0);
   margin: 4px 0;
   padding: 8px;
-  border: 1px solid #3C3B45;
+  border: 1px solid var(--primaria-cinza-1);
   border-radius: 4px;
   transition: all .3s;
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item:hover {
-  background: #06021B;
-  border-color: #7766DD;
+  background: var(--cor-primaria-7);
+  border-color: var(--cor-primaria);
   transform: translateY(-2px);
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item h3 {
   font-size: 20px;
   line-height: 1.5;
-  color: #B3B3B3;
+  color: var(--cinza-3);
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item.ads {
@@ -66,7 +66,6 @@
   justify-content: space-between;
 }
 
-
 .secao-sobre-descricao .formacao-cursos .formacao-item.ads h3,
 .secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span {
   width: 50%;
@@ -74,7 +73,7 @@
 
 .secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span span {
   display: block;
-  color: #808080;
+  color: var(--cinza-5);
   text-align: right;
 }
 

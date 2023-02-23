@@ -17,7 +17,7 @@
   width: calc(85% / 2 - 20px);
   min-height: 550px;
   padding: 0px 20px;
-  border: 2px solid #76d;
+  border: 2px solid var(--cor-primaria);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -27,9 +27,9 @@
 }
 
 .projetos-container-box .projeto-box:hover {
-  background: #000;
-  border-color: #00CCBB;
-  box-shadow: 0px 4px 0px 0px #00CCBB;
+  background: var(--cinza-9);
+  border-color: var(--cor-secundaria);
+  box-shadow: 0px 4px 0px 0px var(--cor-secundaria);
   transform: translateY(-4px);
 }
 
@@ -40,16 +40,16 @@
 }
 
 .projetos-container-box .projeto-box:hover h2.subtitulo-secao {
-  color: #00CCBB;
+  color: var(--cor-secundaria);
 }
 .projetos-container-box .projeto-box:hover h2.subtitulo-secao::after {
-  background: #00CCBB;
+  background: var(--cor-secundaria);
 }
 
 .projetos-container-box .projeto-box p {
   font-size: 16px;
   line-height: 1.7;
-  color: #b3b3b3;
+  color: var(--cinza-3);
 }
 
 .projetos-container-box .projeto-box h2.subtitulo-secao + p {
@@ -68,7 +68,7 @@
   transform: translateX(-50%);
   width: 50%;
   position: absolute;
-  background: #3C3B45;
+  background: var(--primaria-cinza-1);
 }
 
 .projetos-container-box .projeto-box .tecnologias::before {
@@ -89,10 +89,10 @@
 
 .projetos-container-box .projeto-box .projeto-box-tecnologias .tecnologia-usada {
   flex: 1;
-  background: #3C3B45;
+  background: var(--primaria-cinza-1);
   padding: 4px 0;
   text-transform: uppercase;
-  color: #C3BFDE;
+  color: var(--primaria-cinza-4);
   font-size: 12px;
   line-height: 1;
   border-radius: 4px;
@@ -101,7 +101,7 @@
 
 .projetos-container-box .projeto-box .projeto-box-tecnologias .tecnologia-usada:hover {
   transform: translateY(-2px);
-  background: #06021B;
+  background: var(--cor-primaria-7);
 }
 
 .projetos-container-box .projeto-box .projetos-botoes {
@@ -113,23 +113,23 @@
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao {
   font-size: 14px;
-  background: #76d;
-  color: #100F12;
+  background: var(--cor-primaria);
+  color: var(--primaria-cinza-0);
   border: 2px solid transparent;
 }
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao:hover {
-  background: #00CCBB;
+  background: var(--cor-secundaria);
 }
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao:last-child {
   background: transparent;
-  border-color: #76d;
-  color: #76d;
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
 }
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao:last-child:hover {
-  background: #3C3B45;
+  background: var(--primaria-cinza-1);
 }
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao img {

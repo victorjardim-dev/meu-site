@@ -1,0 +1,32 @@
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box {
+  cursor: pointer;
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box > span {
+  visibility: visible;
+  transform: rotate(180deg);
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-titulo-box.ativo > span {
+  transform: initial;
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-conteudo-box {
+  display: none;
+  animation: openBox .3s;
+}
+
+.js .certificados .certificado-container .certificado-box .certificado-conteudo-box.ativo {
+  display: flex;
+}
+
+@keyframes openBox {
+  from {
+    opacity: 0;
+    max-height: 0px;
+  }
+  to {
+    opacity: 1;
+    max-height: 800px;
+  }
+}

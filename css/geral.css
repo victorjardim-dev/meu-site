@@ -5,8 +5,8 @@
 }
 
 ::selection {
-  background: #7766DD;
-  color: #fff;
+  background: var(--cor-primaria);
+  color: var(--cinza-0);
 }
 
 html {
@@ -35,7 +35,7 @@ span {
 }
 
 strong.texto-destacado {
-  color: #5948BF;
+  color: var(--cor-primaria-1);
 }
 
 img {
@@ -124,5 +124,4 @@ img {
 .desabilitado:hover {
   opacity: 1;
   filter: grayscale(80%);
-
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Victor Jardim - Desenvolvedor Front End Web &amp; UI Designer em Fortaleza</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="refresh" content="7; URL='/#contato'"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <style>
+    body {
+      padding-top: 120px;
+      height: 100vh;
+      width: 100vw;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .pagina-redirect {
+      width: 100%;
+      height: 100%;
+      padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      text-align: center;
+      color: #b3b3b3;
+    }
+    .pagina-redirect .logo {
+      margin-bottom: 80px;
+      transform: scale(1.5);
+    }
+    .pagina-redirect .logo img {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .pagina-redirect .pagina-redirect-titulo{
+      font-size: 20px;
+      line-height: 1.5;
+      color: #7766DD;
+      margin-bottom: 40px;
+    }
+    .pagina-redirect .pagina-redirect-subtitulo {
+      background-color: #000;
+      font-size: 16px;
+      line-height: 2;
+      border: 2px solid #7766DD;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      min-height: 300px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .pagina-redirect .pagina-redirect-subtitulo #segundos {
+      color: #7766DD;
+      font-size: 32px;
+      line-height: 1.5;
+      border: 1px solid #b3b3b3;
+      border-radius: 20%;
+      padding: 20px 40px;
+      margin: 40px 0px;
+    }
+    .pagina-redirect .pagina-redirect-subtitulo .ate-mais {
+      font-size: 32px;
+      color: #7766DD;
+    }
+  </style>
+  <div class="pagina-redirect">
+    <figure class="logo">
+      <img src="../img/logo.svg" alt="">
+    </figure>
+    <h1 class="pagina-redirect-titulo">Opa, beleza? &#128513;<br><br>Infelizmente, esta página não está disponível.</h1>
+    <h2 class="pagina-redirect-subtitulo">Você será redirecionado de volta em <br><span id="segundos">5</span></h2>
+
+    <script>
+      const subtitulo = document.querySelector('h2');
+      const segundos = document.getElementById('segundos');
+
+      function contagemRegressiva(segundo) {
+        let i = +segundo.innerText;
+        i--;
+        if(i >= 0) {
+          segundo.innerText = i;          
+        } else {
+          subtitulo.innerHTML = '<span class="ate-mais">Até Mais!<span>';
+          clearInterval(intervalo);
+        }
+        console.log(intervalo);    
+      }
+      
+      const intervalo = setInterval(() => contagemRegressiva(segundos), 1000 );
+      
+    </script>
+  </div>
+</body>
+</html>

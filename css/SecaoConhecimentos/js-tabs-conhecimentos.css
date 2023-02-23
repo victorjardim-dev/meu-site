@@ -1,0 +1,55 @@
+.js .conhecimentos-principais .principais .principais-titulo-box {
+  justify-content: center;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box {
+  display: none;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box::before {
+  background: #7766DD;
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span:hover {
+  background: #00CCBB;
+  color: #FFFFFF;
+  transform: translateX(8px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span {
+  cursor: pointer;
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo {
+  background: #06021B;
+  border-color: #7766DD;
+  color: #7766DD;
+  cursor: pointer;
+  transform: translateX(8px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo::after {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 41px;
+  background: #3C3B45;
+  right: -41px;
+  top: 50%;
+  border-top: 1px solid #3C3B45;
+  border-bottom: 1px solid #3C3B45;
+  transform: translate3d(0px, -50%, 0px);
+}
+
+.js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo::after {
+  background: #06021B;
+  border-color: #7766DD;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box.js-ativo {
+  display: flex;
+  transform: translateY(0);
+  background: #06021B;
+  border-color: #7766DD;
+  min-height: 370px;
+}

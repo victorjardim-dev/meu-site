@@ -1,14 +1,19 @@
 :root {
   --cor-primaria: #7766DD;
+  --cor-primaria-1: #5948BF;
+  --cor-primaria-2: #4433A5;
+  --cor-primaria-7: #06021B;
+
   --linear-primaria: linear-gradient(180deg, #7766DD 0%, #5948BF 100%);  
   --primaria-cinza-0: #100F12;
   --primaria-cinza-1: #3C3B45;
+  --primaria-cinza-4: #C3BFDE;
   
   --cor-secundaria: #00CCBB;
   --secundaria-cinza-0: #020303;
   --linear-secundaria: linear-gradient(180deg, #00CCBB 0%, #0DA195 100%);
 
-  --cinza-9: #000;
+  --cinza-9: #000000;
   --cinza-8: #1A1A1A;
   --cinza-7: #333333;
   --cinza-6: #4D4D4D;
@@ -17,6 +22,5 @@
   --cinza-3: #B3B3B3;
   --cinza-2: #CCCCCC;
   --cinza-1: #E6E6E6;
-  --cinza-0: #fff;
-
+  --cinza-0: #FFFFFF;
 }

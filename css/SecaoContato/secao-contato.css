@@ -1,6 +1,6 @@
 .secao-contato {
   padding: 200px 0px;
-  background: #020303;
+  background: var(--secundaria-cinza-0);
 }
 
 .secao-contato .secao-contato-conteudo {
@@ -20,19 +20,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li {
   margin-bottom: 20px;
-  border-bottom: 1px solid #3C3B45;
+  border-bottom: 1px solid var(--primaria-cinza-1);
   transition: .3s ease-in-out;
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li:hover {
   transform: translateX(12px);
-  border-color: #00CCBB;
+  border-color: var(--cor-secundaria);
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li a {  
@@ -41,7 +41,7 @@
   justify-content: space-between;
   padding: 12px 0px;
   gap: 40px;
-  color: #B3B3B3;
+  color: var(--cinza-3);
   font-size: 20px;
   line-height: 1.5;
 }
@@ -52,16 +52,16 @@
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li:hover a {
-  color: #00CCBB;
+  color: var(--cor-secundaria);
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li:hover a svg path {
   fill: var(--cor-secundaria);
-  stroke: var(--cor-secundaria);
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li:hover:nth-child(2) a svg:nth-child(1) path {
   fill: transparent;
+  stroke: var(--cor-secundaria);
 }
 
 .secao-contato .secao-contato-conteudo .social-lista li a,
@@ -77,7 +77,7 @@
   margin: 80px 0px 20px;
   font-size: 16px;
   line-height: 1.7;
-  color: #B3B3B3;
+  color: var(--cinza-3);
   position: relative;
 }
 
@@ -89,9 +89,17 @@
   transform: translateX(-50%);
   top: -32px;
   position: absolute;
-  background: #3C3B45;
+  background: var(--primaria-cinza-1);
 }
 
 .secao-contato .secao-contato-conteudo .secao-contato-imagem-cv a.botao {
-  color: #100F12;
+  color: var(--primaria-cinza-0);
+  font-size: 16px;
+  padding: 16px 20px;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv a.botao > img {
+  display: inline;
+  margin-left: 8px;
+  transform: translateY(-50%) scale(1.5);
 }

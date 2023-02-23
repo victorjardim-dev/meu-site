@@ -15,8 +15,8 @@
 }
 
 .apresentacao-descricao .boas-vindas > span#boas-vindas {
-  background-color: #06021B;
-  border: 1px solid #3C3B45;
+  background-color: var(--cor-primaria-7);
+  border: 1px solid var(--primaria-cinza-1);
   padding: 0rem 0.5rem;
 }
 
@@ -105,9 +105,9 @@
 
 .apresentacao-social li svg:hover path {
   fill: var(--cor-secundaria);
-  stroke: var(--cor-secundaria);
 }
 
 .apresentacao-social li:nth-child(2) svg:hover path {
   fill: transparent;
+  stroke: var(--cor-secundaria);
 }

@@ -1,10 +1,37 @@
-@import url('./cores-geral.css');
+/* ESTILOS GERAIS */
+@import url('./geral-cores.css');
 @import url('./geral.css');
+
+/* TOPO */
 @import url('./Topo/topo.css');
+@import url('./Topo/topo-responsivo.css');
+
+/* SECAO APRESENTACAO */
 @import url('./SecaoApresentacao/secao-apresentacao.css');
+@import url('./SecaoApresentacao/apresentacao-responsivo.css');
+
+/* SECAO SOBRE */
 @import url('./SecaoSobre/secao-sobre.css');
+@import url('./SecaoSobre/sobre-responsivo.css');
+
+/* SECAO CONHECIMENTOS */
 @import url('./SecaoConhecimentos/secao-conhecimentos.css');
+@import url('./SecaoConhecimentos/js-tabs-conhecimentos.css');
+@import url('./SecaoConhecimentos/conhecimentos-responsivo.css');
+
+/* SECAO CERTIFICADOS */
 @import url('./SecaoCertificados/secao-certificados.css');
+@import url('./SecaoCertificados/js-accordion-certificados.css');
+@import url('./SecaoCertificados/certificados-responsivo.css');
+
+/* SECAO PROJETOS */
 @import url('./SecaoProjetos/secao-projetos.css');
+@import url('./SecaoProjetos/projetos-responsivo.css');
+
+/* SECAO CONTATO */
 @import url('./SecaoContato/secao-contato.css');
+@import url('./SecaoContato/contato-responsivo.css');
+
+/* SECAO RODAPE */
 @import url('./Rodape/rodape.css');
+@import url('./Rodape/rodape-responsivo.css');
