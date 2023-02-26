@@ -81,6 +81,12 @@ img {
   width: 60px;
 }
 
+@media (max-width: 1220px) {
+  .titulo-secao {
+    font-size: 40px;
+  }
+}
+
 .subtitulo-secao {
   color: var(--cor-primaria);
   font-size: 24px;
@@ -115,6 +121,13 @@ img {
 
 .botao:hover {
   background: var(--linear-secundaria);
+}
+
+@media (max-width: 1220px) {
+  .secao-apresentacao .botao {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
 }
 
 .desabilitado {

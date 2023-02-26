@@ -1,0 +1,20 @@
+@media (max-width: 690px) {
+  .secao-contato .secao-contato-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+  }
+  .secao-contato .secao-contato-conteudo .secao-contato-titulo-social,
+  .secao-contato-imagem-cv {
+    width: 100%;
+  }
+  .secao-contato-imagem-cv {
+    order: -1;
+  }
+}
+
+@media (max-width: 580px) {
+  .secao-contato {
+    padding: 120px 0px;
+  }
+}

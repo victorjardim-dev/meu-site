@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 30%;
+  width: 40%;
 }
 
 .conhecimentos-principais .principais .principais-titulo-box span {
@@ -53,7 +53,7 @@
 }
 
 .conhecimentos-principais .principais .principais-descricao-box-container {
-  width: 50%;
+  width: 60%;
 }
 
 .conhecimentos-principais .principais .principais-descricao-box {
@@ -103,17 +103,11 @@
   margin: 40px 0;
 }
 
-.conhecimentos-principais .principais .principais-descricao-box img {
-  filter: grayscale(10%);
-  margin: 0 auto;
-}
-
 .conhecimentos-emdesenvolvimento p {
   margin-top: 32px;
   padding-bottom: 40px;
   font-size: 16px;
   line-height: 1.5;
-  width: 53ch;
   color: var(--cinza-3);
   position: relative;
 }
@@ -134,6 +128,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .conhecimentos-emdesenvolvimento .emdesenvolvimento-imgs img {

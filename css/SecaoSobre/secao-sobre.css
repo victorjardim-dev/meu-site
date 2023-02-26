@@ -32,11 +32,10 @@
 
 .secao-sobre-descricao .sobre-mim p {
   color: var(--cinza-3);
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.75;
   margin-bottom: 8px;
   font-weight: 400;
-  width: 54ch;
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item {
@@ -55,7 +54,7 @@
 }
 
 .secao-sobre-descricao .formacao-cursos .formacao-item h3 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   color: var(--cinza-3);
 }

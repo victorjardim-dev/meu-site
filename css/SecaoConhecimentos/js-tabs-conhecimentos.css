@@ -7,12 +7,12 @@
 }
 
 .js .conhecimentos-principais .principais .principais-descricao-box::before {
-  background: #7766DD;
+  background: var(--cor-primaria);
 }
 
 .js .conhecimentos-principais .principais .principais-titulo-box span:hover {
-  background: #00CCBB;
-  color: #FFFFFF;
+  background: var(--cor-secundaria);
+  color: var(--cinza-0);
   transform: translateX(8px);
 }
 
@@ -21,9 +21,9 @@
 }
 
 .js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo {
-  background: #06021B;
-  border-color: #7766DD;
-  color: #7766DD;
+  background: var(--cor-primaria-7);
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
   cursor: pointer;
   transform: translateX(8px);
 }
@@ -32,24 +32,53 @@
   content: '';
   position: absolute;
   height: 8px;
-  width: 41px;
-  background: #3C3B45;
-  right: -41px;
+  background: var(--primaria-cinza-1);
+  width: 32px;
+  right: -32px;
   top: 50%;
-  border-top: 1px solid #3C3B45;
-  border-bottom: 1px solid #3C3B45;
-  transform: translate3d(0px, -50%, 0px);
+  border-top: 1px solid var(--primaria-cinza-1);
+  border-bottom: 1px solid var(--primaria-cinza-1);
+  transform: translateY(-50%);
+  animation: showSpan .8s;
 }
 
 .js .conhecimentos-principais .principais .principais-titulo-box span.js-ativo::after {
-  background: #06021B;
-  border-color: #7766DD;
+  background: var(--cor-primaria-7);
+  border-color: var(--cor-primaria);
 }
 
 .js .conhecimentos-principais .principais .principais-descricao-box.js-ativo {
   display: flex;
+  background: var(--cor-primaria-7);
+  border-color: var(--cor-primaria);
+  min-height: 400px;
+  animation: slideBox .8s ease;
+}
+
+.js .conhecimentos-principais .principais .principais-descricao-box.js-ativo:hover {
   transform: translateY(0);
-  background: #06021B;
-  border-color: #7766DD;
-  min-height: 370px;
+}
+
+@keyframes slideBox {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes showSpan {
+  from {
+    width: 0;
+    right: 0;
+    opacity: 0;
+  }
+  to {
+    width: 32px;
+    right: -32px;
+    opacity: 1;
+  }
 }

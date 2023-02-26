@@ -1,5 +1,8 @@
 const data = new Date();
 
+import personalDebug from "./personal-debug.js";
+// personalDebug();
+
 import setGreetings from "./boas-vindas.js";
 setGreetings(data);
 

@@ -141,4 +141,10 @@
   width: 40%;
   height: auto;
   border-radius: 8px;
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+
+.certificados .certificado-imagem img:hover {
+  filter: grayscale(0%);
 }

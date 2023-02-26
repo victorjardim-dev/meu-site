@@ -71,6 +71,12 @@
 
 .secao-contato .secao-contato-conteudo .secao-contato-imagem-cv figure img {
   border-radius: 8px;
+  filter: grayscale(100%);
+  transition: .3s ease-in-out;
+}
+
+.secao-contato .secao-contato-conteudo .secao-contato-imagem-cv figure img:hover {
+  filter: grayscale(0%);
 }
 
 .secao-contato .secao-contato-conteudo .secao-contato-imagem-cv p {

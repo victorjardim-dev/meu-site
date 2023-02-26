@@ -4,7 +4,7 @@
 
 .projetos-container-box {
   width: 100%;
-  padding: 0px 160px;
+  padding: 0px 80px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -15,6 +15,7 @@
 
 .projetos-container-box .projeto-box {
   width: calc(85% / 2 - 20px);
+  min-width: 400px;
   min-height: 550px;
   padding: 0px 20px;
   border: 2px solid var(--cor-primaria);

@@ -13,7 +13,7 @@
 <body>
   <style>
     body {
-      padding-top: 120px;
+      padding-top: 80px;
       height: 100vh;
       width: 100vw;
       font-family: 'Montserrat', sans-serif;
@@ -48,6 +48,11 @@
       color: #7766DD;
       margin-bottom: 40px;
     }
+    .pagina-redirect .pagina-redirect-titulo #erro {
+      opacity: .2;
+      color: #b3b3b3;
+      margin-top: 12px;
+    }
     .pagina-redirect .pagina-redirect-subtitulo {
       background-color: #000;
       font-size: 16px;
@@ -81,7 +86,7 @@
     <figure class="logo">
       <img src="../img/logo.svg" alt="">
     </figure>
-    <h1 class="pagina-redirect-titulo">Opa, beleza? &#128513;<br><br>Infelizmente, esta página não está disponível.</h1>
+    <h1 class="pagina-redirect-titulo">Opa, beleza? &#128513;<br><br>Infelizmente, esta página não está disponível<br>ou o acesso é proibido.<br><span id="erro"></span></h1>
     <h2 class="pagina-redirect-subtitulo">Você será redirecionado de volta em <br><span id="segundos">5</span></h2>
 
     <script>

@@ -2,12 +2,14 @@
 <html lang="pt-br">
 <head>
   <title>Victor Jardim - Desenvolvedor Front-End Web e UI Designer</title>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Victor Jardim - Desenvolvedor Front-End Web e UI Designer">
   <meta name="keywords" content="">
   <meta name="author" content="Victor Jardim Dev">
+
   <!-- Open Graph -->
   <meta property="og:title" content="">
   <meta property="og:description" content="">
@@ -113,9 +115,9 @@
                 <div class="sobre-mim">
                   <h2 class="subtitulo-secao">Sobre mim</h2>
                   <div>
-                    <p>Desde que decidi ingressar na programação, tenho estudado, praticado bastante e colocado em prática o que já aprendi até aqui.</p>
-                    <p>Me apaixonei pelas tecnologias de <strong>Front End para Web</strong>, e também pela <strong>criação de interface de usuário</strong>. Ultimamente, tenho estudado <strong>JavaScript</strong> e me aprofundado em <strong>React JS</strong>. No futuro, quero <strong>me tornar um Dev Full Stack</strong>.</p>
-                    <p>Sou uma pessoa que tem facilidade no aprendizado, gosto de novos desafios, tenho uma comunicação aceitável e <strong>busco me aprimorar cada vez mais</strong>.</p>
+                    <p>Desde que escolhi ingressar na programação, tenho estudado bastante e colocado em prática tudo o que já aprendi até aqui. Me apaixonei pelas tecnologias de <strong>Front End para Web</strong>, e também pela <strong>criação de interfaces de usuário</strong>.</p>
+                    <p>Ultimamente, tenho estudado <strong>JavaScript</strong>, e me aprofudado em <strong>React JS</strong>. No futuro, quero me tornar um <strong>desenvolvedor Full-Stack</strong>.</p>
+                    <p>Sou uma pessoa que tem </strong>facilidade no aprendizado</strong>, gosto de novos desafios, tenho uma comunicação aceitável, busco me aprimorar cada vez mais e <strong>estou à procura de uma oportunidade</strong> para dar meus primeiros passos no mercado da programação como <strong>desenvolvedor web</strong>.</p>
                   </div>
                 </div>
 
@@ -296,7 +298,7 @@
               </div>
 
               <div class="certificado-conteudo">
-                <h3>Certificado Autoridade - React</h3>
+                <h3>Certificado Autoridade - React JS</h3>
                 <span>73h</span>
                 <a href="https://www.devmedia.com.br/certificado/tecnologia/react/victor-b-jardim" target="_blank" class="botao">Certificado <img src="./img/icones/icone-seta-link.svg" alt="Icone"></a>
               </div>
@@ -529,6 +531,34 @@
       <p>Todos os Direitos Reservados - <span id="ano">2023</span></p>
     </div>
   </footer>
+
+  <div id="debug-container">
+    <p id="debug"></p>
+    <style>
+      #debug-container #debug {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        background: #17a817;
+        z-index: 9999;
+        padding: 6px 20px;
+        width: 300px;
+        opacity: .5;
+        color: var(--cinza-0);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        transition: .3s ease;
+        display: none;
+      }
+      #debug-container #debug:hover {
+        opacity: 1;
+      }
+      #debug-container #debug.ativo {
+        display: block;
+      }
+    </style>
+  </div>
   
   <script src="./js/scripts.js" type="module"></script>
 </body>

@@ -1,0 +1,41 @@
+@media (max-width: 1025px) {
+  .secao-sobre-conteudo {
+    flex-direction: column;
+  }
+  .secao-sobre-conteudo figure {
+    width: 60%;
+    order: 1;
+    align-self: center;
+  }
+  .secao-sobre-descricao .sobre-mim {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .secao-sobre-descricao .sobre-mim p {
+    width: 100%;
+  }
+  .secao-sobre-descricao .formacao {
+    width: 100%;
+  }
+}
+
+@media (max-width: 955px) {
+  .secao-bg {
+    padding: 120px 0;
+  }
+}
+
+@media (max-width: 565px) {
+  .secao-sobre-descricao .formacao-cursos .formacao-item h3 {
+    font-size: 16px;
+  }
+  .secao-sobre-descricao .formacao-cursos .formacao-item.ads .ads-span span {
+    font-size: 12px;
+    align-self: flex-end;
+  }
+  .secao-sobre-descricao .formacao-cursos .ingles-ensinomedio {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}

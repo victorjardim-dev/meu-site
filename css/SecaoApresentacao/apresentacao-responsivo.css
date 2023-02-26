@@ -1,0 +1,48 @@
+@media (max-width: 1220px) {
+  .apresentacao-descricao .apresentacao-titulos h1 {
+    font-size: 3.2rem;
+  }
+  .apresentacao-descricao .apresentacao-titulos h1::before {
+    width: 100%;
+  }
+  .apresentacao-descricao .boas-vindas,
+  .apresentacao-descricao .apresentacao-titulos h2 {
+    font-size: .975rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .apresentacao-descricao .apresentacao-titulos h2::before {
+    flex: 1;
+  }
+}
+
+@media (max-width: 955px) {
+  .secao-apresentacao {
+    flex-direction: column;
+    padding: 7.5rem 20px;
+  }
+  .apresentacao-descricao {
+    align-self: flex-start;
+  }
+  .apresentacao-social {
+    width: 100%;
+  }
+  .apresentacao-social ul {
+    flex-direction: row;
+    width: 100%;
+    gap: 2.5rem;
+  }
+  .apresentacao-social ul::after {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .apresentacao-descricao .apresentacao-titulos h1 {
+    font-size: 2.5rem;
+  }
+  .apresentacao-descricao .apresentacao-titulos h2::before {
+    display: none;
+  }
+}
