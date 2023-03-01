@@ -14,11 +14,19 @@ html {
   scroll-padding-top: 20px;
 }
 
+@media (max-width: 955px) {
+  html {
+    scroll-padding-top: 120px;
+  }
+}
+
 body {
   background: var(--primaria-cinza-0);
   color: var(--cinza-0);
   font-family: 'Montserrat', sans-serif;
 }
+
+body::-webkit-scrollbar {}
 
 ul {
   list-style: none;
@@ -83,7 +91,7 @@ img {
 
 @media (max-width: 1220px) {
   .titulo-secao {
-    font-size: 40px;
+    font-size: 42px;
   }
 }
 
@@ -137,4 +145,15 @@ img {
 .desabilitado:hover {
   opacity: 1;
   filter: grayscale(80%);
+}
+
+.js .elementoScroll {
+  opacity: 0;
+  transition: .6s ease-in-out;
+  transform: translateY(-30px);
+}
+
+.js .elementoScroll.ativo {
+  opacity: 1;
+  transform: translateY(0px);
 }

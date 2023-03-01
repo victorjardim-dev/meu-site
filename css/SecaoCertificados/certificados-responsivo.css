@@ -8,7 +8,10 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 955px) {
+  .secao-certificados {
+    padding-top: 120px;
+  }
   .certificados {
     flex-direction: column;
   }
@@ -25,11 +28,17 @@
     flex-direction: column;
     gap: 20px;
   }
-  .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao {
+  .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao,
+  .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:first-of-type a.botao {
     right: 20px;
+    top: 70%;
+    padding: 6px 12px;
     opacity: .7;
     color: #fff;
     font-weight: 300;
+  }
+  .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:hover a.botao {
+    right: 20px;
   }
   .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao > img {
     margin-left: 2px;

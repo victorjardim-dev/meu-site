@@ -5,10 +5,10 @@
 
 .secao-conhecimentos::before {
   content: '';
-  height: 4px;
+  height: 2px;
   max-width: 1440px;
-  width: 100%;
-  background: var(--primaria-cinza-1);
+  width: 80%;
+  background: var(--cinza-8);
   position: absolute;
   top: 0;
   left: 50%;

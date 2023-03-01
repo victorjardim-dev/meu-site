@@ -1,5 +1,53 @@
 @media (max-width: 955px) {
-  .nav-menu {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    padding: 1.5rem 0;
+  }
+  .logo img {
+    height: 60px;
+  }
+  nav .nav-menu {
     display: none;
+  }
+  nav a#mobile-menu {
+    display: block;
+    background: #76d;
+    height: 4px;
+    width: 40px;
+    box-shadow: 0px 12px 0px 0px #76d, 0px -12px 0px 0px #76d;
+  }
+  nav .nav-menu.ativo {
+    display: block;
+    position: absolute;
+    top: 112px;
+    right: 0px;
+    z-index: 99999;
+    padding: 0 12px;
+    text-align: right;
+    background: #06021B;
+    width: 60vw;
+    animation: abrirMenu .9s forwards;
+  }
+  nav .nav-menu.ativo a {
+    width: 100%;
+  }
+  .nav-menu a::after {
+    display: none;
+  }
+
+  @keyframes abrirMenu {
+    from {
+      opacity: 0;
+      max-height: 0px;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      max-height: 600px;
+      transform: translateY(0px);
+    }
   }
 }

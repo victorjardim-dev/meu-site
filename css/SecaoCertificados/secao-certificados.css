@@ -1,18 +1,5 @@
 .secao-certificados {
   padding: 200px 0px 120px 0px;
-  position: relative;
-}
-
-.secao-certificados::after {
-  content: '';
-  height: 4px;
-  max-width: 1440px;
-  width: 100%;
-  background: var(--primaria-cinza-1);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .certificados {
@@ -22,9 +9,11 @@
   gap: 40px;
 }
 
-.certificados .certificado-container,
+.certificados .certificado-container {
+  width: 60%;
+}
 .certificados .certificado-imagem {
-  width: 50%;
+  width: 40%;
   align-self: stretch;
 }
 
@@ -94,6 +83,11 @@
   line-height: 1;
   opacity: 0;
   transition: .3s ease;
+}
+
+.certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:first-of-type a.botao {
+  right: 70px;
+  opacity: .7;
 }
 
 .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo a.botao > img {
