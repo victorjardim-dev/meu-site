@@ -34,7 +34,7 @@
     top: 70%;
     padding: 6px 12px;
     opacity: .7;
-    color: #fff;
+    color: var(--cinza-0);
     font-weight: 300;
   }
   .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo:hover a.botao {

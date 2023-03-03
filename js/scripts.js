@@ -9,7 +9,7 @@ animacaoScroll();
 import setGreetings from "./boas-vindas.js";
 setGreetings(data);
 
-import setCurrentYear from "./anoAtual.js";
+import setCurrentYear from "./ano-atual.js";
 setCurrentYear(data);
 
 import activeTabsKnowledge from "./conhecimentos-tab.js";

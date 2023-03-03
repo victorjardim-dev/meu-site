@@ -14,10 +14,10 @@
   }
   nav a#mobile-menu {
     display: block;
-    background: #76d;
+    background: var(--cor-primaria);
     height: 4px;
     width: 40px;
-    box-shadow: 0px 12px 0px 0px #76d, 0px -12px 0px 0px #76d;
+    box-shadow: 0px 12px 0px 0px var(--cor-primaria), 0px -12px 0px 0px var(--cor-primaria);
   }
   nav .nav-menu.ativo {
     display: block;
@@ -27,7 +27,7 @@
     z-index: 99999;
     padding: 0 12px;
     text-align: right;
-    background: #06021B;
+    background: var(--cor-primaria-7);
     width: 60vw;
     animation: abrirMenu .9s forwards;
   }

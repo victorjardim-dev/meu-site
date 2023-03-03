@@ -61,7 +61,7 @@
 }
 
 .projetos-container-box .projeto-box p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--cinza-3);
 }
@@ -107,7 +107,7 @@
   padding: 4px 0;
   text-transform: uppercase;
   color: var(--primaria-cinza-4);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1;
   border-radius: 4px;
   transition: all .3s ease-in-out;
@@ -126,7 +126,7 @@
 }
 
 .projetos-container-box .projeto-box .projetos-botoes a.botao {
-  font-size: 14px;
+  font-size: 0.875rem;
   background: var(--cor-primaria);
   color: var(--primaria-cinza-0);
   border: 2px solid transparent;

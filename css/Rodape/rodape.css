@@ -12,7 +12,7 @@
   height: 1px;
   left: 50%;
   transform: translateX(-50%);
-  background: #5948BF;
+  background: var(--cor-primaria-1);
 }
 
 .rodape::before {
@@ -24,12 +24,12 @@
 
 .rodape p {
   font-family: 'Kelly Slab', cursive;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
   letter-spacing: 0.1rem;
-  color: #B3B3B3;
+  color: var(--cinza-3);
 }
 
 .rodape p > span {
-  color: #5948BF;
+  color: var(--cor-primaria-1);
 }

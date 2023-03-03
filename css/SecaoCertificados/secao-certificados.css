@@ -44,7 +44,7 @@
 }
 
 .certificados .certificado-container .certificado-box .certificado-titulo-box h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: var(--cor-primaria);
   font-weight: 600;
@@ -79,7 +79,7 @@
   right: 0px;
   padding: 6px 18px;
   color: var(--primaria-cinza-0);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1;
   opacity: 0;
   transition: .3s ease;
@@ -106,7 +106,7 @@
 }
 
 .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo h3 {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   color: var(--cinza-3);
   font-weight: 400;
@@ -118,7 +118,7 @@
 
 .certificados .certificado-container .certificado-box .certificado-conteudo-box .certificado-conteudo span {
   font-family: 'Kelly Slab', cursive;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1;
   letter-spacing: 0.05rem;
   color: var(--cor-primaria);
