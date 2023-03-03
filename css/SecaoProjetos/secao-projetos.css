@@ -38,6 +38,7 @@
   justify-content: space-evenly;
   text-align: center;
   transition: .3s;
+  position: relative;
 }
 
 .projetos-container-box .projeto-box:hover {
