@@ -9,45 +9,4 @@
   .logo img {
     height: 60px;
   }
-  nav .nav-menu {
-    display: none;
-  }
-  nav a#mobile-menu {
-    display: block;
-    background: var(--cor-primaria);
-    height: 4px;
-    width: 40px;
-    box-shadow: 0px 12px 0px 0px var(--cor-primaria), 0px -12px 0px 0px var(--cor-primaria);
-  }
-  nav .nav-menu.ativo {
-    display: block;
-    position: absolute;
-    top: 112px;
-    right: 0px;
-    z-index: 99999;
-    padding: 0 12px;
-    text-align: right;
-    background: var(--cor-primaria-7);
-    width: 60vw;
-    animation: abrirMenu .9s forwards;
-  }
-  nav .nav-menu.ativo a {
-    width: 100%;
-  }
-  .nav-menu a::after {
-    display: none;
-  }
-
-  @keyframes abrirMenu {
-    from {
-      opacity: 0;
-      max-height: 0px;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      max-height: 600px;
-      transform: translateY(0px);
-    }
-  }
 }

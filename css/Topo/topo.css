@@ -8,6 +8,7 @@ header {
 .topo {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -16,12 +17,9 @@ header {
   filter: brightness(1.5);
 }
 
-#mobile-menu {
-  display: none;
-}
-
 .nav-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -43,9 +41,9 @@ header {
   content: '';
   left: 0;
   bottom: 0.5rem;
-  width: 0px;
+  width: 0;
   height: 0.125rem;
-  transition: width .6s ease;
+  transition: all .6s ease;
 }
 
 .nav-menu a:hover::after {

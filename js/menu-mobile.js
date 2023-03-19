@@ -1,6 +1,6 @@
 function ativarMenuMobile() {
   const header = document.querySelector('.js header');
-  const btnMobile = document.querySelector('.js nav #mobile-menu');
+  const btnMobile = document.querySelector('.js [data-menu="button-mobile"]');
   const navMenu = document.querySelector('.js .nav-menu');
 
   function setBgHeader() {

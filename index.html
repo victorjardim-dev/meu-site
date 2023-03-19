@@ -48,8 +48,8 @@
         </figure>
       </div>
       <nav>
-        <a href="#" id="mobile-menu"></a>
-        <ul class="nav-menu">
+        <button data-menu="button-mobile" aria-expanded="false" aria-controls="menu-mobile"></button>
+        <ul class="nav-menu" data-menu="lista" id="menu-mobile">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#conhecimentos">Conhecimentos</a></li>
           <li><a href="#certificados">Certificados</a></li>
@@ -257,6 +257,12 @@
               </div>
 
               <div class="certificado-conteudo">
+                <h3>CSS Grid Layout</h3>
+                <span>10h</span>
+                <a href="https://www.origamid.com/certificate/a0278bfb" target="_blank" class="botao">Certificado <img src="./img/icones/icone-seta-link.svg" alt="Icone"></a>
+              </div>
+
+              <div class="certificado-conteudo">
                 <h3>UI Design para Iniciantes</h3>
                 <span>34h</span>
                 <a href="https://www.origamid.com/certificate/33171491" target="_blank" class="botao">Certificado <img src="./img/icones/icone-seta-link.svg" alt="Icone"></a>
@@ -272,6 +278,12 @@
                 <h3>Tipografia Avançada</h3>
                 <span>24h</span>
                 <a href="https://www.origamid.com/certificate/0a82fc73" target="_blank" class="botao">Certificado <img src="./img/icones/icone-seta-link.svg" alt="Icone"></a>
+              </div>
+
+              <div class="certificado-conteudo">
+                <h3>WordPress como CMS</h3>
+                <span>18h</span>
+                <a href="https://www.origamid.com/certificate/eab85fb2" target="_blank" class="botao">Certificado <img src="./img/icones/icone-seta-link.svg" alt="Icone"></a>
               </div>
             </div>
           </div> 
@@ -434,8 +446,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="secao-contato elementoScroll">
+    <section class="secao-contato">
+      <div class="elementoScroll">
         <h1 class="titulo-secao" id="contato">Contato</h1>
         <div class="container-geral secao-contato-conteudo">
 
